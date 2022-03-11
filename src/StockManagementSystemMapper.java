@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public interface StockManagementSystemMapper {
-	//관리 상품 추가
+	//관리 상품 추가 
 	public boolean insertProduct(Product p);
 	//관리 상품 제거
 	public boolean deleteProduct(Product p);
-	//관리 상품 수정 : 재고수정(p.stock != null -> 재고 수정), 가격수정(p.price != null -> 가격수정)
+	//관리 상품 수정 : 재고수정(p.stock != null -> 재고 수정), 가격수정(p.price != null -> 가격수정) 상품번호와 유저 아이디를 제약 조건에 이용하여 상품 수정
 	public boolean updateProduct(Product p);
 	//전체줄력
 	public ArrayList<Product> selectAllProduct();
